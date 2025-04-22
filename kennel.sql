@@ -53,3 +53,14 @@ INSERT INTO 'Customer' VALUES (null, "Mo Silvera", "201 Created St", "mo@silvera
 INSERT INTO 'Customer' VALUES (null, "Bryan Nilsen", "500 Internal Error Blvd", "bryan@nilsen.com", "password");
 INSERT INTO 'Customer' VALUES (null, "Jenna Solis", "301 Redirect Ave", "jenna@solis.com", "password");
 INSERT INTO 'Customer' VALUES (null, "Emily Lemmon", "454 Mulberry Way", "emily@lemmon.com", "password");
+
+-- Get only the animal rows where the `id` field value is 3
+SELECT
+    a.id,
+    a.name,
+    a.breed,
+    a.status,
+    a.location_id,
+    a.customer_id
+FROM animal a
+WHERE a.id = 8
