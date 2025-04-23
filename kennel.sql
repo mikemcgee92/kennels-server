@@ -64,3 +64,12 @@ SELECT
     a.customer_id
 FROM animal a
 WHERE a.id = 8
+
+SELECT
+    c.id,
+    c.name,
+    c.address,
+    c.email,
+    c.password
+FROM customer c
+WHERE c.email = "jenna@solis.com"
